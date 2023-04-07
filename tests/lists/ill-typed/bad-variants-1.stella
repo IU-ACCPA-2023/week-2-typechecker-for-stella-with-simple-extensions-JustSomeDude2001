@@ -4,9 +4,9 @@ extend with #lists, #general-recursion;
 fn length(list : [Nat]) -> Nat {
   return if List::isempty(list)
     then 0
-    else succ(length(List::tail(list)))
+    else succ(length(List::tail(list)));
 }
 
 fn main(n : Nat) -> Nat {
-  return length(cons(n, [n, n, n, 0, succ(n), false, n]))
+  return length(cons(n, [n, n, n, 0, succ(n), false, n]));
 }
